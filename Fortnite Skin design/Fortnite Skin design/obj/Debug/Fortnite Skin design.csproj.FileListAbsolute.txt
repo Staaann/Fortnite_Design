@@ -10,3 +10,14 @@ C:\Users\jonathan\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin des
 C:\Users\jonathan\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.pdb
 C:\Users\jonathan\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\jonathan\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.csproj.CopyComplete
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\bin\Debug\Fortnite Skin design.exe.config
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\bin\Debug\Fortnite Skin design.exe
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\bin\Debug\Fortnite Skin design.pdb
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.csprojAssemblyReference.cache
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite_Skin_design.Form1.resources
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite_Skin_design.Properties.Resources.resources
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.csproj.GenerateResource.cache
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.csproj.CoreCompileInputs.cache
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.csproj.CopyComplete
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.exe
+C:\Users\wieks\Desktop\Fortnite_Design\Fortnite Skin design\Fortnite Skin design\obj\Debug\Fortnite Skin design.pdb

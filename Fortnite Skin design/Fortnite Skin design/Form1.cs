@@ -42,6 +42,7 @@ namespace Fortnite_Skin_design
 
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -77,5 +78,11 @@ namespace Fortnite_Skin_design
                 
             
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
