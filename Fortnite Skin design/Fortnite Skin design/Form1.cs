@@ -36,5 +36,10 @@ namespace Fortnite_Skin_design
         {
             this.Close();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
