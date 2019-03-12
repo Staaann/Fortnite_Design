@@ -41,5 +41,41 @@ namespace Fortnite_Skin_design
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNmenu_Click(object sender, EventArgs e)
+        {
+            if (slidemenu.Width == 60)
+            {
+                slidemenu.Visible = false;
+                slidemenu.Width = 260;
+                PanelAnimator.ShowSync(slidemenu);
+            }
+            else
+            {
+
+                slidemenu.Visible = false;
+                slidemenu.Width = 60;
+                PanelAnimator.ShowSync(slidemenu);
+            }
+                
+            
+        }
     }
 }
