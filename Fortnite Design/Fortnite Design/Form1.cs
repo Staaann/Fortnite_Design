@@ -40,29 +40,47 @@ namespace Fortnite_Design
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            if (slidemenu.Width == 285)
+            if (slidemenu.Width == 50)
             {
-                slidemenu.Width = 50;
-                slidemenu.Visible = false;
+              
+                slidemenu.Width = 285;
                 PanelAnimator.ShowSync(slidemenu);
-
             }
             else
             {
-                slidemenu.Visible = true;
-                slidemenu.Width = 285;
-
+                slidemenu.Width = 50;
                 PanelAnimator.ShowSync(slidemenu);
                
 
             }
-            Console.WriteLine(slidemenu.Location);
+            //dit is nog niet klaar de slidepanel doet telkens plus 50 
+            Console.Write(slidemenu.Location);
 
            
 
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
         {
 
         }
