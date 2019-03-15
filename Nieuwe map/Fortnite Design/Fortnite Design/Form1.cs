@@ -63,7 +63,7 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+     
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -85,6 +85,31 @@ namespace Fortnite_Design
         {
 
         }
+
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+   /*     private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.SkinTable' table. You can move, or remove it, as needed.
+            this.skinTableTableAdapter.Fill(this.databaseDataSet.SkinTable);
+
+        }*/
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+          //  contactPage1.BringToFront();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
         private void button1_Click(object sender, EventArgs e)
         {
@@ -103,14 +128,14 @@ namespace Fortnite_Design
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+     /*   private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'fortniteDataSet1.Fortnite' table. You can move, or remove it, as needed.
             this.fortniteTableAdapter.Fill(this.fortniteDataSet1.Fortnite);
             // TODO: This line of code loads data into the 'fortniteDataSet.Fortnite_Skin' table. You can move, or remove it, as needed.
             this.fortnite_SkinTableAdapter.Fill(this.fortniteDataSet.Fortnite_Skin);
 
-        }
+        }*/
 
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
         {
@@ -148,5 +173,6 @@ namespace Fortnite_Design
             f2.ShowDialog();
             this.Close();
         }
+
     }
 }
