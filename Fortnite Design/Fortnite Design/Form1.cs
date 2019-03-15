@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -85,7 +84,6 @@ namespace Fortnite_Design
         {
 
         }
-<<<<<<< HEAD
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -109,70 +107,5 @@ namespace Fortnite_Design
         {
 
         }
-=======
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
-            con.Open();
-            //MessageBox.Show("Connection Created");
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select * from [Fortnite_Skin]";
-            cmd.Connection = con;
-            SqlDataReader rd = cmd.ExecuteReader();
-            while(rd.Read())
-            {
-                MessageBox.Show(rd["SkinPrice"].ToString());
-            }
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'fortniteDataSet1.Fortnite' table. You can move, or remove it, as needed.
-            this.fortniteTableAdapter.Fill(this.fortniteDataSet1.Fortnite);
-            // TODO: This line of code loads data into the 'fortniteDataSet.Fortnite_Skin' table. You can move, or remove it, as needed.
-            this.fortnite_SkinTableAdapter.Fill(this.fortniteDataSet.Fortnite_Skin);
-
-        }
-
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog dlg = new OpenFileDialog())
-            {
-                dlg.Title = "Open Image";
-                dlg.Filter = "Image Files (*.bmp;*.jpg;*.jpeg;*.png|*.BMP;*.JPG;*.JPEG;*.PNG";
-
-                if(dlg.ShowDialog() == DialogResult.OK)
-                {
-                    pictureBox2.Image = Image.FromFile(dlg.FileName);
-                }
-            }
-        }
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-           // this.Hide();
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
-            this.Close();
-        }
->>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
     }
 }
