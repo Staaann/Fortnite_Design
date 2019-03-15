@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,8 @@ namespace Fortnite_Design
 {
     public partial class Form2 : Form
     {
-        private string saveLocation = "D:\\\\\\\\CollectorsEdition/MainCollection/";
+        private string saveLocation = @"D:\\MP_Upload/";
+
         public Form2()
         {
             InitializeComponent();
@@ -49,32 +51,25 @@ namespace Fortnite_Design
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {         
-            string ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
-            string fullpath = saveLocation + textBox1.Text + ".png";
-            string query = "INSERT INTO Fortnite_Skin(`SkinNaam`, `SkinPrice`) VALUES ('" + textBox1.Text + "', '" + textBox2.Text + "')";
-//            string query = "INSERT INTO Fortnite_Skin(`SkinNaam`, `SkinPrice`, `SkinImage`) VALUES ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + fullpath + "')";
-
-            SqlConnection databaseConnection = new SqlConnection(ConnectionString);
-            SqlCommand commandDatabase = new SqlCommand(query, databaseConnection);
-            commandDatabase.CommandTimeout = 60;
+        {
             
-            try
+            string fullpath = saveLocation + textBox1.Text + ".png";
+
+            SqlConnection con = new SqlConnection("Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Insert into Fortnite(SkinNaam,SkinPrice,SkinImage) values ('" + textBox1.Text + "','" + textBox2.Text + "',' " + fullpath+  "')", con);
+            pictureBox1.Image.Save(@fullpath, ImageFormat.Png);
+            int i = cmd.ExecuteNonQuery();
+            if(i!=0)
             {
-                databaseConnection.Open();
-                SqlDataReader myreader = commandDatabase.ExecuteReader();
-                //pictureBox1.Image.Save(fullpath, ImageFormat.Png);
-
-                MessageBox.Show("Entry succesfull");
-
-                databaseConnection.Close();
-
+                MessageBox.Show("saved");
             }
-            catch
+            else
             {
-                //show any error message
-                MessageBox.Show("Whoops");
+                MessageBox.Show("error");
             }
+            con.Close(); 
+               
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -85,6 +80,20 @@ namespace Fortnite_Design
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string path = @"D:\MP_Upload";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
         }
     }
 }
