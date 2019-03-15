@@ -45,19 +45,43 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+<<<<<<< HEAD
             this.skinTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet = new Fortnite_Design.DatabaseDataSet();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.skinTableTableAdapter = new Fortnite_Design.DatabaseDataSetTableAdapters.SkinTableTableAdapter();
             this.contactPage1 = new Fortnite_Design.ContactPage();
+=======
+            this.button1 = new System.Windows.Forms.Button();
+            this.fortniteSkinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fortniteDataSet = new Fortnite_Design.FortniteDataSet();
+            this.SkinNaam = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.fortnite_SkinTableAdapter = new Fortnite_Design.FortniteDataSetTableAdapters.Fortnite_SkinTableAdapter();
+            this.fortniteDataSet1 = new Fortnite_Design.FortniteDataSet1();
+            this.fortniteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fortniteTableAdapter = new Fortnite_Design.FortniteDataSet1TableAdapters.FortniteTableAdapter();
+            this.button4 = new System.Windows.Forms.Button();
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             this.slidemenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNmenu)).BeginInit();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.skinTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteSkinBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteBindingSource)).BeginInit();
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -215,13 +239,33 @@
             this.BTNmenu.Location = new System.Drawing.Point(9, 47);
             this.BTNmenu.Margin = new System.Windows.Forms.Padding(2);
             this.BTNmenu.Name = "BTNmenu";
+<<<<<<< HEAD
             this.BTNmenu.Size = new System.Drawing.Size(28, 41);
+=======
+            this.BTNmenu.Size = new System.Drawing.Size(37, 41);
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             this.BTNmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BTNmenu.TabIndex = 0;
             this.BTNmenu.TabStop = false;
             this.BTNmenu.Zoom = 10;
             this.BTNmenu.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+<<<<<<< HEAD
+=======
+            // pictureBox1
+            // 
+            this.PanelAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = global::Fortnite_Design.Properties.Resources.Wit;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
@@ -338,6 +382,7 @@
             this.bunifuCustomTextbox1.TabIndex = 2;
             this.bunifuCustomTextbox1.TextChanged += new System.EventHandler(this.bunifuCustomTextbox1_TextChanged);
             // 
+<<<<<<< HEAD
             // skinTableBindingSource
             // 
             this.skinTableBindingSource.DataMember = "SkinTable";
@@ -347,6 +392,73 @@
             // 
             this.databaseDataSet.DataSetName = "DatabaseDataSet";
             this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+=======
+            // button1
+            // 
+            this.PanelAnimator.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
+            this.button1.Location = new System.Drawing.Point(525, 444);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(171, 91);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "GetData";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // fortniteSkinBindingSource
+            // 
+            this.fortniteSkinBindingSource.DataMember = "Fortnite_Skin";
+            this.fortniteSkinBindingSource.DataSource = this.fortniteDataSet;
+            // 
+            // fortniteDataSet
+            // 
+            this.fortniteDataSet.DataSetName = "FortniteDataSet";
+            this.fortniteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // SkinNaam
+            // 
+            this.SkinNaam.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.SkinNaam, BunifuAnimatorNS.DecorationType.None);
+            this.SkinNaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkinNaam.Location = new System.Drawing.Point(219, 61);
+            this.SkinNaam.Name = "SkinNaam";
+            this.SkinNaam.Size = new System.Drawing.Size(214, 40);
+            this.SkinNaam.TabIndex = 5;
+            this.SkinNaam.Text = "\r\nSkin Prijzen zijn in vbucks";
+            this.SkinNaam.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            // 
+            // button2
+            // 
+            this.PanelAnimator.SetDecoration(this.button2, BunifuAnimatorNS.DecorationType.None);
+            this.button2.Location = new System.Drawing.Point(255, 449);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(239, 81);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Select image";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.PanelAnimator.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox2.Location = new System.Drawing.Point(719, 272);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(226, 245);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            // 
+            // button3
+            // 
+            this.PanelAnimator.SetDecoration(this.button3, BunifuAnimatorNS.DecorationType.None);
+            this.button3.Location = new System.Drawing.Point(242, 288);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(191, 110);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Form switch";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             // 
             // bunifuDragControl1
             // 
@@ -355,6 +467,7 @@
             this.bunifuDragControl1.TargetControl = this.Header;
             this.bunifuDragControl1.Vertical = true;
             // 
+<<<<<<< HEAD
             // skinTableTableAdapter
             // 
             this.skinTableTableAdapter.ClearBeforeFill = true;
@@ -366,12 +479,51 @@
             this.contactPage1.Name = "contactPage1";
             this.contactPage1.Size = new System.Drawing.Size(763, 423);
             this.contactPage1.TabIndex = 3;
+=======
+            // fortnite_SkinTableAdapter
+            // 
+            this.fortnite_SkinTableAdapter.ClearBeforeFill = true;
+            // 
+            // fortniteDataSet1
+            // 
+            this.fortniteDataSet1.DataSetName = "FortniteDataSet1";
+            this.fortniteDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fortniteBindingSource
+            // 
+            this.fortniteBindingSource.DataMember = "Fortnite";
+            this.fortniteBindingSource.DataSource = this.fortniteDataSet1;
+            // 
+            // fortniteTableAdapter
+            // 
+            this.fortniteTableAdapter.ClearBeforeFill = true;
+            // 
+            // button4
+            // 
+            this.PanelAnimator.SetDecoration(this.button4, BunifuAnimatorNS.DecorationType.None);
+            this.button4.Location = new System.Drawing.Point(242, 161);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(180, 92);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.SkinNaam);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bunifuCustomTextbox1);
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             this.Controls.Add(this.slidemenu);
             this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.Header);
@@ -380,7 +532,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+<<<<<<< HEAD
             this.Text = "Menu";
+=======
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             this.Load += new System.EventHandler(this.Form1_Load);
             this.slidemenu.ResumeLayout(false);
             this.slidemenu.PerformLayout();
@@ -390,8 +545,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.skinTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteSkinBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortniteBindingSource)).EndInit();
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,10 +577,25 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
+<<<<<<< HEAD
         private DatabaseDataSet databaseDataSet;
         private System.Windows.Forms.BindingSource skinTableBindingSource;
         private DatabaseDataSetTableAdapters.SkinTableTableAdapter skinTableTableAdapter;
         private ContactPage contactPage1;
+=======
+        private System.Windows.Forms.Button button1;
+        private FortniteDataSet fortniteDataSet;
+        private System.Windows.Forms.BindingSource fortniteSkinBindingSource;
+        private FortniteDataSetTableAdapters.Fortnite_SkinTableAdapter fortnite_SkinTableAdapter;
+        private Bunifu.Framework.UI.BunifuCustomLabel SkinNaam;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button3;
+        private FortniteDataSet1 fortniteDataSet1;
+        private System.Windows.Forms.BindingSource fortniteBindingSource;
+        private FortniteDataSet1TableAdapters.FortniteTableAdapter fortniteTableAdapter;
+        private System.Windows.Forms.Button button4;
+>>>>>>> 037b6bf08086e546157c71727f1b7b2af5d15be4
     }
 }
 
