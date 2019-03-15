@@ -62,7 +62,7 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+     
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -81,6 +81,29 @@ namespace Fortnite_Design
         }
 
         private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.SkinTable' table. You can move, or remove it, as needed.
+            this.skinTableTableAdapter.Fill(this.databaseDataSet.SkinTable);
+
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            contactPage1.BringToFront();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
