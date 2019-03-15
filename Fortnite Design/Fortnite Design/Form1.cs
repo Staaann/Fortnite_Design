@@ -105,8 +105,6 @@ namespace Fortnite_Design
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'fortniteDataSet1.Fortnite' table. You can move, or remove it, as needed.
-            this.fortniteTableAdapter.Fill(this.fortniteDataSet1.Fortnite);
             // TODO: This line of code loads data into the 'fortniteDataSet.Fortnite_Skin' table. You can move, or remove it, as needed.
             this.fortnite_SkinTableAdapter.Fill(this.fortniteDataSet.Fortnite_Skin);
 
