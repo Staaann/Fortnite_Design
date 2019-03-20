@@ -93,7 +93,7 @@ namespace Fortnite_Design
             con.Open();
             //MessageBox.Show("Connection Created");
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select * from [Fortnite_Skin]";
+            cmd.CommandText = "Select * from [Fortnite]";
             cmd.Connection = con;
             SqlDataReader rd = cmd.ExecuteReader();
             while(rd.Read())
@@ -105,6 +105,8 @@ namespace Fortnite_Design
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'fortniteDataSet2.Account' table. You can move, or remove it, as needed.
+            this.accountTableAdapter.Fill(this.fortniteDataSet2.Account);
             // TODO: This line of code loads data into the 'fortniteDataSet1.Fortnite' table. You can move, or remove it, as needed.
             this.fortniteTableAdapter.Fill(this.fortniteDataSet1.Fortnite);
             // TODO: This line of code loads data into the 'fortniteDataSet.Fortnite_Skin' table. You can move, or remove it, as needed.
@@ -147,6 +149,42 @@ namespace Fortnite_Design
             Form2 f2 = new Form2();
             f2.ShowDialog();
             this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // this.Hide();
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
+            con.Open();
+            //MessageBox.Show("Connection Created");
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "Select * from [Account]";
+            cmd.Connection = con;
+            SqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                MessageBox.Show(rd["username"].ToString());
+            }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
+            con.Open();
+            //MessageBox.Show("Connection Created");
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "Select * from [Account]";
+            cmd.Connection = con;
         }
     }
 }
