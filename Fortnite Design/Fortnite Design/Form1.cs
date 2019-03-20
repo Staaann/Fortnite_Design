@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace Fortnite_Design
 {
@@ -88,19 +91,19 @@ namespace Fortnite_Design
         
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
-            con.Open();
-            //MessageBox.Show("Connection Created");
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select * from [Fortnite]";
-            cmd.Connection = con;
-            SqlDataReader rd = cmd.ExecuteReader();
-            while(rd.Read())
-            {
-                MessageBox.Show(rd["SkinPrice"].ToString());
-            }
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=fortnite;";
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
 
+            databaseConnection.Open();
+            MessageBox.Show("Connection Created");
+            MySqlCommand cmd = new MySqlCommand(connectionString);
+            cmd.CommandText = "Select * from [Fortnite]";
+            
+            /*while (rd.Read())
+            {
+                MessageBox.Show(rd["SkinNaam"].ToString());
+            }
+            */
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -161,17 +164,18 @@ namespace Fortnite_Design
 
         private void button6_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
-            con.Open();
-            //MessageBox.Show("Connection Created");
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select * from [Account]";
-            cmd.Connection = con;
-            SqlDataReader rd = cmd.ExecuteReader();
+            string ConnectionString = @"Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True";
+            MySqlConnection databaseConnection = new MySqlConnection(ConnectionString);
+            
+            databaseConnection.Open();
+            MessageBox.Show("Connection Created");
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "Select * from [Fortnite]";
+            cmd.Connection = databaseConnection;
+            MySqlDataReader rd = cmd.ExecuteReader();
             while (rd.Read())
             {
-                MessageBox.Show(rd["username"].ToString());
+                MessageBox.Show(rd["SkinNaam"].ToString());
             }
 
         }

@@ -10,6 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 
 namespace Fortnite_Design
@@ -17,7 +20,7 @@ namespace Fortnite_Design
     public partial class Form2 : Form
     {
         private string saveLocation = @"D:\\MP_Upload/";
-
+        
         public Form2()
         {
             InitializeComponent();
@@ -53,24 +56,33 @@ namespace Fortnite_Design
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            if (!Directory.Exists(saveLocation))
+            {
+                Directory.CreateDirectory(saveLocation);
+            }
             string fullpath = saveLocation + textBox1.Text + ".png";
-            
-            SqlConnection con = new SqlConnection("Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Insert into Fortnite(SkinNaam,SkinPrice,SkinImage) values ('" + textBox1.Text + "','" + textBox2.Text + "',' " + fullpath+  "')", con);
-            pictureBox1.Image.Save(@fullpath, ImageFormat.Png);
-            int i = cmd.ExecuteNonQuery();
-            if(i!=0)
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=fortnite;";
+            string query = "Insert into Fortnite(SkinNaam, SkinPrice, SkinImage) values('" + textBox1.Text + "', '" + textBox2.Text + "', ' " + fullpath+  "')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 20;
+
+            try
             {
-                MessageBox.Show("saved");
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+                pictureBox1.Image.Save(@fullpath, ImageFormat.Png);
+
+                MessageBox.Show("Succes");
+
+                databaseConnection.Close();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("error");
+                MessageBox.Show("failed");
             }
-            con.Close(); 
-               
+         
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -90,11 +102,7 @@ namespace Fortnite_Design
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string path = @"D:\MP_Upload";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
+            
         }
     }
 }
