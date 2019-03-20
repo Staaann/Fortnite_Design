@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+
 
 namespace Fortnite_Design
 {
@@ -55,7 +55,7 @@ namespace Fortnite_Design
         {
             
             string fullpath = saveLocation + textBox1.Text + ".png";
-            string a;
+            
             SqlConnection con = new SqlConnection("Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True");
             con.Open();
             SqlCommand cmd = new SqlCommand("Insert into Fortnite(SkinNaam,SkinPrice,SkinImage) values ('" + textBox1.Text + "','" + textBox2.Text + "',' " + fullpath+  "')", con);
