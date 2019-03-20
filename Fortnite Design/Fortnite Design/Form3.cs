@@ -27,21 +27,28 @@ namespace Fortnite_Design
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=fortnite;";
+            string query = "Insert into Account(username,password) values ('" + textBox1.Text + "','" + textBox2.Text + "')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 20;
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("Succes");
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("failed");
+            }
             
             
-            SqlConnection con = new SqlConnection("Data Source=STAN;Initial Catalog=Fortnite;Integrated Security=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Insert into Account(username,password) values ('" + textBox1.Text + "','" + textBox2.Text + "')", con);
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
-            {
-                MessageBox.Show("saved");
-            }
-            else
-            {
-                MessageBox.Show("error");
-            }
-            con.Close();
 
 
             this.Hide();
