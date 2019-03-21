@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+ 0ec2e57d53530260f6cfe0233cebcef627f2ddf0
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.slidemenu = new System.Windows.Forms.Panel();
@@ -65,6 +69,7 @@
             this.fortniteTableAdapter = new Fortnite_Design.FortniteDataSet1TableAdapters.FortniteTableAdapter();
             this.fortniteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accountTableAdapter = new Fortnite_Design.FortniteDataSet2TableAdapters.AccountTableAdapter();
+            this.button7 = new System.Windows.Forms.Button();
             this.slidemenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNmenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -321,6 +326,7 @@
             // 
             this.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
             this.PanelAnimator.Cursor = null;
+
             animation3.AnimateOnlyDifferences = true;
             animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
             animation3.LeafCoeff = 0F;
@@ -337,6 +343,23 @@
             animation3.TimeCoeff = 0F;
             animation3.TransparencyCoeff = 0F;
             this.PanelAnimator.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(30);
+            animation1.RotateCoeff = 0.5F;
+            animation1.RotateLimit = 0.2F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.PanelAnimator.DefaultAnimation = animation1;
+ 0ec2e57d53530260f6cfe0233cebcef627f2ddf0
             this.PanelAnimator.Interval = 0;
             // 
             // bunifuCustomTextbox1
@@ -467,10 +490,16 @@
             this.PanelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
             this.comboBox1.DisplayMember = "username";
             this.comboBox1.FormattingEnabled = true;
+
             this.comboBox1.Location = new System.Drawing.Point(323, 102);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
+
+            this.comboBox1.Location = new System.Drawing.Point(338, 80);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+ 0ec2e57d53530260f6cfe0233cebcef627f2ddf0
             this.comboBox1.TabIndex = 12;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -528,11 +557,27 @@
             // 
             this.accountTableAdapter.ClearBeforeFill = true;
             // 
+            // button7
+            // 
+            this.PanelAnimator.SetDecoration(this.button7, BunifuAnimatorNS.DecorationType.None);
+            this.button7.Location = new System.Drawing.Point(442, 161);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(166, 92);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Test";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+ 
             this.ClientSize = new System.Drawing.Size(1445, 690);
+
+            this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.button7);
+ 0ec2e57d53530260f6cfe0233cebcef627f2ddf0
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -607,6 +652,7 @@
         private FortniteDataSet2 fortniteDataSet2;
         private System.Windows.Forms.BindingSource accountBindingSource;
         private FortniteDataSet2TableAdapters.AccountTableAdapter accountTableAdapter;
+        private System.Windows.Forms.Button button7;
     }
 }
 
