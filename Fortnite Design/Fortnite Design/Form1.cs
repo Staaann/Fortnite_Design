@@ -190,5 +190,13 @@ namespace Fortnite_Design
             cmd.CommandText = "Select * from [Account]";
             cmd.Connection = con;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // this.Hide();
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+            this.Close();
+        }
     }
 }
