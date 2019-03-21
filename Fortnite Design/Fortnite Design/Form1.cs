@@ -91,13 +91,13 @@ namespace Fortnite_Design
         
         private void button1_Click(object sender, EventArgs e)
         {
-            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=fortnite;";
+            /*string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=fortnite;";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
 
             databaseConnection.Open();
             MessageBox.Show("Connection Created");
             MySqlCommand cmd = new MySqlCommand(connectionString);
-            cmd.CommandText = "Select * from [Fortnite]";
+            cmd.CommandText = "Select * from [Fortnite]";*/
             
             /*while (rd.Read())
             {
@@ -109,11 +109,13 @@ namespace Fortnite_Design
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'fortniteDataSet2.Account' table. You can move, or remove it, as needed.
-            this.accountTableAdapter.Fill(this.fortniteDataSet2.Account);
+            // this.accountTableAdapter.Fill(this.fortniteDataSet2.Account);
+           
+            
             // TODO: This line of code loads data into the 'fortniteDataSet1.Fortnite' table. You can move, or remove it, as needed.
-            this.fortniteTableAdapter.Fill(this.fortniteDataSet1.Fortnite);
+            //this.fortniteTableAdapter.Fill(this.fortniteDataSet1.Fortnite);
             // TODO: This line of code loads data into the 'fortniteDataSet.Fortnite_Skin' table. You can move, or remove it, as needed.
-            this.fortnite_SkinTableAdapter.Fill(this.fortniteDataSet.Fortnite_Skin);
+            //this.fortnite_SkinTableAdapter.Fill(this.fortniteDataSet.Fortnite_Skin);
 
         }
 

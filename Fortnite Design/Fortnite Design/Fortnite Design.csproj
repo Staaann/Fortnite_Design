@@ -213,13 +213,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FortniteDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FortniteDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>FortniteDatabase.mdf</DependentUpon>
-    </Content>
+    <None Include="Resources\iconfinder_user-avatar-human-admin-login_2203549.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dreamteam logo %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icons_password_1564520.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

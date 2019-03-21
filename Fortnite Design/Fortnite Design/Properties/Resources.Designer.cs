@@ -83,6 +83,36 @@ namespace Fortnite_Design.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dreamteam_logo__2_ {
+            get {
+                object obj = ResourceManager.GetObject("dreamteam logo (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_icons_password_1564520 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_icons_password_1564520", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_user_avatar_human_admin_login_2203549 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_user-avatar-human-admin-login_2203549", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap skinlogo {
             get {
                 object obj = ResourceManager.GetObject("skinlogo", resourceCulture);
