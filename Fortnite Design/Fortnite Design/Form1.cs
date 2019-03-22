@@ -213,7 +213,7 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-
+            contact1.BringToFront();
 
         }
         public void loadFromDatabase()
