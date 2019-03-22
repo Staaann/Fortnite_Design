@@ -21,6 +21,7 @@ namespace Fortnite_Design
             Debug.WriteLine("Test");
             InitializeComponent();
             loadFromDatabase();
+
         }
       /*  private void Form4_Load(object sender , EventArgs e)
         {
@@ -44,14 +45,16 @@ namespace Fortnite_Design
 
                 var flowbox = new FlowLayoutPanel
                 {
-                    Size = new Size(320, 500),
+                    Size = new Size(320, 320),
                 };
                 flowLayoutPanel1.Controls.Add(flowbox);
-                var nametext = new TextBox
+                var nametext = new Label
                 {
+                    
                     Size = new Size(300, 25),
                     Text = "" + pullingdata["SkinNaam"],
-                    ReadOnly = true
+                    //ReadOnly = true
+                    
                 };
                 flowbox.Controls.Add(nametext);
 
