@@ -205,5 +205,10 @@ namespace Fortnite_Design
         {
             collection1.BringToFront();
         }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            contact1.BringToFront();
+        }
     }
 }

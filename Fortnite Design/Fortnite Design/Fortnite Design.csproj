@@ -75,6 +75,12 @@
     <Compile Include="Collection.Designer.cs">
       <DependentUpon>Collection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -129,6 +135,9 @@
     </Compile>
     <EmbeddedResource Include="Collection.resx">
       <DependentUpon>Collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

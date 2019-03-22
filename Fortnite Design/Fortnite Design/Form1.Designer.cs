@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.slidemenu = new System.Windows.Forms.Panel();
@@ -57,6 +57,7 @@
             this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fortniteDataSet2 = new Fortnite_Design.FortniteDataSet2();
             this.button7 = new System.Windows.Forms.Button();
+            this.collection1 = new Fortnite_Design.Collection();
             this.fortniteSkinBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fortniteDataSet = new Fortnite_Design.FortniteDataSet();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -67,7 +68,7 @@
             this.fortniteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accountTableAdapter = new Fortnite_Design.FortniteDataSet2TableAdapters.AccountTableAdapter();
             this.dataSet11 = new Fortnite_Design.DataSet1();
-            this.collection1 = new Fortnite_Design.Collection();
+            this.contact1 = new Fortnite_Design.Contact();
             this.slidemenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNmenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -195,6 +196,7 @@
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -328,22 +330,22 @@
             // 
             this.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
             this.PanelAnimator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
-            animation1.RotateCoeff = 0.5F;
-            animation1.RotateLimit = 0.2F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.PanelAnimator.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(30);
+            animation2.RotateCoeff = 0.5F;
+            animation2.RotateLimit = 0.2F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.PanelAnimator.DefaultAnimation = animation2;
             this.PanelAnimator.Interval = 0;
             // 
             // bunifuCustomTextbox1
@@ -494,6 +496,14 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // collection1
+            // 
+            this.PanelAnimator.SetDecoration(this.collection1, BunifuAnimatorNS.DecorationType.None);
+            this.collection1.Location = new System.Drawing.Point(211, 59);
+            this.collection1.Name = "collection1";
+            this.collection1.Size = new System.Drawing.Size(1063, 619);
+            this.collection1.TabIndex = 14;
+            // 
             // fortniteSkinBindingSource
             // 
             this.fortniteSkinBindingSource.DataMember = "Fortnite_Skin";
@@ -543,19 +553,20 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // collection1
+            // contact1
             // 
-            this.PanelAnimator.SetDecoration(this.collection1, BunifuAnimatorNS.DecorationType.None);
-            this.collection1.Location = new System.Drawing.Point(211, 59);
-            this.collection1.Name = "collection1";
-            this.collection1.Size = new System.Drawing.Size(1063, 619);
-            this.collection1.TabIndex = 14;
+            this.PanelAnimator.SetDecoration(this.contact1, BunifuAnimatorNS.DecorationType.None);
+            this.contact1.Location = new System.Drawing.Point(211, 59);
+            this.contact1.Name = "contact1";
+            this.contact1.Size = new System.Drawing.Size(1063, 563);
+            this.contact1.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 690);
+            this.Controls.Add(this.contact1);
             this.Controls.Add(this.collection1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.comboBox1);
@@ -636,6 +647,7 @@
         private System.Windows.Forms.Button button7;
         private DataSet1 dataSet11;
         private Collection collection1;
+        private Contact contact1;
     }
 }
 
