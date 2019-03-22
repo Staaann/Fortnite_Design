@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,11 @@ namespace Fortnite_Design
 {
     public partial class Form1 : Form
     {
+        List<int> entryID = new List<int>();
         public Form1()
         {
             InitializeComponent();
+            loadFromDatabase();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -66,7 +69,7 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+            skin_panel.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -204,6 +207,59 @@ namespace Fortnite_Design
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             collection1.BringToFront();
+        }
+
+        private void collection1_Load(object sender, EventArgs e)
+        {
+
+        }
+        public void loadFromDatabase()
+        {
+            Debug.WriteLine("Test");
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=fortnite;";
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            databaseConnection.Open();
+            MySqlCommand pulldata = new MySqlCommand("SELECT * FROM fortnite", databaseConnection);
+            MySqlDataReader pullingdata = pulldata.ExecuteReader();
+
+            while (pullingdata.Read())
+            {
+                Debug.WriteLine("Test");
+                Debug.WriteLine(pullingdata["SkinID"].ToString() + " - Name : " + pullingdata["SkinNaam"].ToString() + " - location : " + pullingdata["SkinImage"].ToString());
+                entryID.Add(Int32.Parse(pullingdata["SkinID"].ToString()));
+
+                var flowbox = new FlowLayoutPanel
+                {
+                    Size = new Size(320, 320),
+                };
+                flowLayoutPanel1.Controls.Add(flowbox);
+                var nametext = new Label
+                {
+                    Font = new Font("Arial", 16),
+                    Size = new Size(300, 25),
+                    Text = "" + pullingdata["SkinNaam"],
+                    //ReadOnly = true
+
+                };
+                flowbox.Controls.Add(nametext);
+
+                var picture = new PictureBox
+                {
+                    Name = "" + pullingdata["SkinNaam"] + ".png",
+                    Size = new Size(300, 300),
+                    SizeMode = PictureBoxSizeMode.Zoom,
+                    Image = Image.FromFile(pullingdata["SkinImage"].ToString())
+                };
+                flowbox.Controls.Add(picture);
+
+            }
+            databaseConnection.Close();
+            entryID.ForEach(Console.WriteLine);
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
