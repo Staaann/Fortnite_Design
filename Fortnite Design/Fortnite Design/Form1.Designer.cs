@@ -68,8 +68,12 @@
             this.fortniteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accountTableAdapter = new Fortnite_Design.FortniteDataSet2TableAdapters.AccountTableAdapter();
             this.dataSet11 = new Fortnite_Design.DataSet1();
+<<<<<<< HEAD
             this.skin_panel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+=======
+            this.contact1 = new Fortnite_Design.Contact();
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             this.slidemenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNmenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +89,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.fortniteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fortniteBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+<<<<<<< HEAD
             this.skin_panel.SuspendLayout();
+=======
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -198,6 +205,7 @@
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -448,6 +456,7 @@
             this.button5.Text = "Add account";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+<<<<<<< HEAD
             // 
             // button6
             // 
@@ -513,6 +522,72 @@
             // 
             // fortniteDataSet
             // 
+=======
+            // 
+            // button6
+            // 
+            this.PanelAnimator.SetDecoration(this.button6, BunifuAnimatorNS.DecorationType.None);
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.button6.Location = new System.Drawing.Point(880, 83);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(94, 25);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "Accounts";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.accountBindingSource;
+            this.PanelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox1.DisplayMember = "username";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(254, 65);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // accountBindingSource
+            // 
+            this.accountBindingSource.DataMember = "Account";
+            this.accountBindingSource.DataSource = this.fortniteDataSet2;
+            // 
+            // fortniteDataSet2
+            // 
+            this.fortniteDataSet2.DataSetName = "FortniteDataSet2";
+            this.fortniteDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button7
+            // 
+            this.PanelAnimator.SetDecoration(this.button7, BunifuAnimatorNS.DecorationType.None);
+            this.button7.Location = new System.Drawing.Point(436, 170);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(124, 75);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Test";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // collection1
+            // 
+            this.PanelAnimator.SetDecoration(this.collection1, BunifuAnimatorNS.DecorationType.None);
+            this.collection1.Location = new System.Drawing.Point(211, 59);
+            this.collection1.Name = "collection1";
+            this.collection1.Size = new System.Drawing.Size(1063, 619);
+            this.collection1.TabIndex = 14;
+            // 
+            // fortniteSkinBindingSource
+            // 
+            this.fortniteSkinBindingSource.DataMember = "Fortnite_Skin";
+            this.fortniteSkinBindingSource.DataSource = this.fortniteDataSet;
+            // 
+            // fortniteDataSet
+            // 
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             this.fortniteDataSet.DataSetName = "FortniteDataSet";
             this.fortniteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
@@ -555,6 +630,7 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+<<<<<<< HEAD
             // skin_panel
             // 
             this.skin_panel.Controls.Add(this.flowLayoutPanel1);
@@ -573,13 +649,27 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1063, 625);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+=======
+            // contact1
+            // 
+            this.PanelAnimator.SetDecoration(this.contact1, BunifuAnimatorNS.DecorationType.None);
+            this.contact1.Location = new System.Drawing.Point(211, 59);
+            this.contact1.Name = "contact1";
+            this.contact1.Size = new System.Drawing.Size(1063, 563);
+            this.contact1.TabIndex = 15;
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 690);
+<<<<<<< HEAD
             this.Controls.Add(this.skin_panel);
+=======
+            this.Controls.Add(this.contact1);
+            this.Controls.Add(this.collection1);
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             this.Controls.Add(this.button7);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
@@ -593,7 +683,10 @@
             this.Controls.Add(this.Header);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
+<<<<<<< HEAD
             this.Controls.Add(this.collection1);
+=======
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             this.PanelAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -616,7 +709,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.fortniteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fortniteBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+<<<<<<< HEAD
             this.skin_panel.ResumeLayout(false);
+=======
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -661,8 +757,12 @@
         private System.Windows.Forms.Button button7;
         private DataSet1 dataSet11;
         private Collection collection1;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel skin_panel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+=======
+        private Contact contact1;
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
     }
 }
 

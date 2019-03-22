@@ -21,7 +21,10 @@ namespace Fortnite_Design
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
             loadFromDatabase();
+=======
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -209,8 +212,9 @@ namespace Fortnite_Design
             collection1.BringToFront();
         }
 
-        private void collection1_Load(object sender, EventArgs e)
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
         }
         public void loadFromDatabase()
@@ -260,6 +264,9 @@ namespace Fortnite_Design
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+=======
+            contact1.BringToFront();
+>>>>>>> cb46b414c937b6a9e97a21f51f51ac0f9e924ef7
         }
     }
 }
