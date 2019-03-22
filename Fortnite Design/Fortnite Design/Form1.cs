@@ -203,7 +203,7 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            
+            collection1.BringToFront();
         }
     }
 }
