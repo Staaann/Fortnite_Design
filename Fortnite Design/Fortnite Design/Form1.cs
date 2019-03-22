@@ -19,6 +19,12 @@ namespace Fortnite_Design
         public Form1()
         {
             InitializeComponent();
+            loadFromDatabase();
+        }
+
+        private void loadFromDatabase()
+        {
+        //    throw new NotImplementedException();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -131,7 +137,7 @@ namespace Fortnite_Design
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog dlg = new OpenFileDialog())
+          /*  using (OpenFileDialog dlg = new OpenFileDialog())
             {
                 dlg.Title = "Open Image";
                 dlg.Filter = "Image Files (*.bmp;*.jpg;*.jpeg;*.png|*.BMP;*.JPG;*.JPEG;*.PNG";
@@ -140,7 +146,7 @@ namespace Fortnite_Design
                 {
                     pictureBox2.Image = Image.FromFile(dlg.FileName);
                 }
-            }
+            }*/
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
@@ -203,7 +209,22 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            collection1.BringToFront();
+            Skins.BringToFront();
+        }
+
+        private void collection1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl21_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
