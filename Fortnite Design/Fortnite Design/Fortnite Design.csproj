@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Collection.Designer.cs">
+      <DependentUpon>Collection.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -121,6 +127,9 @@
     <Compile Include="Skin.Designer.cs">
       <DependentUpon>Skin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Collection.resx">
+      <DependentUpon>Collection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
