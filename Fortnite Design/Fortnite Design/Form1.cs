@@ -71,7 +71,6 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            skin_panel.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
