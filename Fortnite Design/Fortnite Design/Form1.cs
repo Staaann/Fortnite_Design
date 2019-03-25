@@ -71,6 +71,7 @@ namespace Fortnite_Design
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+           skins1.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -263,7 +264,17 @@ namespace Fortnite_Design
         {
 
 
-            contact1.BringToFront();
+            
+
+        }
+
+        private void skin1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void skins1_Load(object sender, EventArgs e)
+        {
 
         }
     }
