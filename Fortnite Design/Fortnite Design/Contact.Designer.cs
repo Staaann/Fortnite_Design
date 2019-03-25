@@ -118,7 +118,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Contact";
-            this.Size = new System.Drawing.Size(1063, 563);
+            this.Size = new System.Drawing.Size(1063, 623);
             this.Load += new System.EventHandler(this.Contact_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
